@@ -1,0 +1,19 @@
+<Window x:Class="GestorMensajesInstitucionales.UI.Views.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login - Gestor de Mensajes" Height="240" Width="420" WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Usuario" />
+        <TextBox x:Name="UsernameTextBox" Grid.Row="1" Margin="0,5,0,10"/>
+        <TextBlock Text="Contraseña" Grid.Row="2" />
+        <PasswordBox x:Name="PasswordBox" Grid.Row="3" Margin="0,5,0,10"/>
+        <Button Grid.Row="3" Content="Ingresar" HorizontalAlignment="Right" Width="90" Margin="0,60,0,0"
+                Click="OnLoginClick" />
+    </Grid>
+</Window>
