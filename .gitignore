@@ -1,0 +1,12 @@
+# Build output
+bin/
+obj/
+
+# SQLite DB
+*.db
+
+# VS / VS Code
+.vs/
+.vscode/
+*.user
+*.suo
